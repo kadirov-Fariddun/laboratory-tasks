@@ -1,21 +1,19 @@
 import React from 'react';
-import logo from '../images/Logo.png';
-import headWrapp from '../images/head-wrapp.png';
-import project1 from '../images/project-1.jpg';
-import project2 from '../images/project-2.jpg';
-import project3 from '../images/project-3.jpg';
-import solution1 from '../images/solution-1.svg';
-import solution2 from '../images/solution-2.svg';
-import solution3 from '../images/solution-3.svg';
-import solution4 from '../images/solution-4.svg';
-import solution5 from '../images/solution-5.svg';
-import solution6 from '../images/solution-6.svg';
-import blog1 from '../images/blog-1.jpg';
-import blog2 from '../images/blog-2.jpg';
-import blog3 from '../images/blog-3.jpg';
-import user from '../images/user.jpg';
-import WorkCard from './WorkCard';
-import SolutionCard from './SolutionCard';
+import headWrapp from './images/head-wrapp.png';
+import project1 from './images/project-1.jpg';
+import project2 from './images/project-2.jpg';
+import project3 from './images/project-3.jpg';
+import solution1 from './images/solution-1.svg';
+import solution2 from './images/solution-2.svg';
+import solution3 from './images/solution-3.svg';
+import solution4 from './images/solution-4.svg';
+import solution5 from './images/solution-5.svg';
+import solution6 from './images/solution-6.svg';
+import blog1 from './images/blog-1.jpg';
+import blog2 from './images/blog-2.jpg';
+import blog3 from './images/blog-3.jpg';
+import user from './images/user.jpg';
+import work from './images/work-1.png';
 // slick component
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -82,26 +80,59 @@ export default function Home() {
                     </a>
                 </div>
                 <div class="how-work-step">
-                <WorkCard 
-                number="01"
-                title="Strategy"
-                text="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
-                />
-                <WorkCard 
-                number="02"
-                title="Wireframing"
-                text="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
-                />
-                <WorkCard 
-                number="03"
-                title="Design"
-                text="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
-                />
-                <WorkCard 
-                number="04"
-                title="Development"
-                text="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
-                />
+                {/* <!-- 1 --> */}
+                    <div class="how-work-step-item">
+                        <div class="how-work-image">
+                            <img src={work} alt="description"/>
+                            <span>01</span>
+                        </div>
+                        <div class="how-work-title">
+                            Strategy
+                        </div>
+                        <p class="how-work-text">
+                            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.
+                        </p>
+                    </div>
+                    {/* <!-- 2 --> */}
+                    <div class="how-work-step-item">
+                        <div class="how-work-image">
+                            <img src={work} alt="description"/>
+                            <span>02</span>
+                        </div>
+                        <div class="how-work-title">
+                            Wireframing
+                        </div>
+                        <p class="how-work-text">
+                            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.
+                        </p>
+                    </div>
+                    {/* <!-- 3 --> */}
+                    <div class="how-work-step-item">
+                        <div class="how-work-image">
+                            <img src={work} alt="description"/>
+                            <span>03</span>
+                        </div>
+                        <div class="how-work-title">
+                            Design
+                        </div>
+                        <p class="how-work-text">
+                            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.
+                        </p>
+                    </div>
+                    {/* <!-- 4 --> */}
+                    <div class="how-work-step-item">
+                        <div class="how-work-image">
+                            <img src={work} alt="description"/>
+                            <span>04</span>
+                        </div>
+                        <div class="how-work-title">
+                            Development
+                        </div>
+                        <p class="how-work-text">
+                            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.
+                        </p>
+                    </div>
+                    {/* <!-- 4 end --> */}
                    
                 </div>
             </div>
@@ -178,60 +209,78 @@ export default function Home() {
                     </h2>
                 </div>
                 <div class="solutions-flex">
-                    {/* <!-- 1 --> */}
-                    <SolutionCard 
-                    src={solution1}
-                    title="Uses Client First"
-                    text="
-                        Euismod faucibus turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed mi. "
-                        />
+                {/* <!-- 1 --> */}
+                    <div class="solutions-item">
+                        <div class="solutions-item-icon">
+                            <img src={solution1} alt="description"/>
+                        </div>
+                        <h3>Uses Client First</h3>
+                        <p>
+                            Euismod faucibus turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed mi. 
+                        </p>
+                    </div>
                     {/* <!-- 2 --> */}
-                    <SolutionCard 
-                    src={solution2}
-                    title="Two Free Revision Round"
-                    text="
-                        Euismod faucibus turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed mi. "
-                        />
+                    <div class="solutions-item">
+                        <div class="solutions-item-icon">
+                            <img src={solution2} alt="description"/>
+                        </div>
+                        <h3>Two Free Revision Round</h3>
+                        <p>
+                            Euismod faucibus turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed mi. 
+                        </p>
+                    </div>
                     {/* <!-- 3 --> */}
-                    <SolutionCard 
-                    src={solution3}
-                    title="Template Customization"
-                    text="
-                        Euismod faucibus turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed mi. "
-                        />
+                    <div class="solutions-item">
+                        <div class="solutions-item-icon">
+                            <img src={solution3} alt="description"/>
+                        </div>
+                        <h3>Template Customization</h3>
+                        <p>
+                            Euismod faucibus turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed mi. 
+                        </p>
+                    </div>
                     {/* <!-- 4 --> */}
-                    <SolutionCard 
-                    src={solution4}
-                    title="24/7 Support"
-                    text="
-                        Euismod faucibus turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed mi. "
-                        />
+                    <div class="solutions-item">
+                        <div class="solutions-item-icon">
+                            <img src={solution4} alt="description"/>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>
+                            Euismod faucibus turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed mi. 
+                        </p>
+                    </div>
                     {/* <!-- 5 --> */}
-                    <SolutionCard 
-                    src={solution5}
-                    title="Quick Delivery"
-                    text="
-                        Euismod faucibus turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed mi. "
-                        />
+                    <div class="solutions-item">
+                        <div class="solutions-item-icon">
+                            <img src={solution5} alt="description"/>
+                        </div>
+                        <h3>Quick Delivery</h3>
+                        <p>
+                            Euismod faucibus turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed mi. 
+                        </p>
+                    </div>
                     {/* <!-- 6 --> */}
-                    <SolutionCard 
-                    src={solution6}
-                    title="Hands-on approach"
-                    text="
-                        Euismod faucibus turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
-                        Pellentesque et velit aliquam sed mi. "
-                        />
+                    <div class="solutions-item">
+                        <div class="solutions-item-icon">
+                            <img src={solution6} alt="description"/>
+                        </div>
+                        <h3>Hands-on approach</h3>
+                        <p>
+                            Euismod faucibus turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed faucib turpis eu gravida mi. 
+                            Pellentesque et velit aliquam sed mi. 
+                        </p>
+                    </div>
                     {/* <!-- 6 --> */}
                 </div>
             </div>

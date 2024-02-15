@@ -1,6 +1,6 @@
 import React from 'react';
-import pricingIcon from '../images/pricing-icon.svg';
-import pricingIconGrey from '../images/pricing-icon-grey.svg';
+import pricingIcon from './images/pricing-icon.svg';
+import pricingIconGrey from './images/pricing-icon-grey.svg';
 
 export default function Pricing() {
   return (

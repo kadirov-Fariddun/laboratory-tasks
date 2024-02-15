@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from '../images/Logo.png';
+import logo  from './images/Logo.png';
 import { NavLink } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <>
-    {/* <!-- footer --> */}
+   {/* <!-- footer --> */}
       <footer class="footer">
         <div class="container">
             <div class="footer-flex">

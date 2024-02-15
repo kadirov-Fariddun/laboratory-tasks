@@ -21,28 +21,28 @@ colorBlocks.forEach(colorBlock => {
 
 
 /// scripts 
-const colors = document.querySelector('.colors');
-const colorsFixed = document.querySelector('.colors-fixed');
-const filter = document.querySelector('.filter');
-const backBtn = document.querySelector('.back-btn');
+// const colors = document.querySelector('.colors');
+// const colorsFixed = document.querySelector('.colors-fixed');
+// const filter = document.querySelector('.filter');
+// const backBtn = document.querySelector('.back-btn');
 const copied = document.querySelector('.copied');
-const colorsFixedFlexSpan = document.querySelectorAll('.colors-fixed-flex span');
-colors.onclick = ()=>{
-  colorsFixed.classList.add('active');
-  setTimeout(() => {
-    filter.classList.add('active');
-  }, 300);
-  setTimeout(() => {
+const colorsFixedFlexSpan = document.querySelectorAll('.colors-flex span');
+// colors.onclick = ()=>{
+//   colorsFixed.classList.add('active');
+//   setTimeout(() => {
+//     filter.classList.add('active');
+//   }, 300);
+//   setTimeout(() => {
     
-  }, timeout);
-}
-backBtn.onclick = ()=>{
-  filter.classList.remove('active');
-  setTimeout(() => {
-    colorsFixed.classList.remove('active');
-  }, 300);
+//   }, timeout);
+// }
+// backBtn.onclick = ()=>{
+//   filter.classList.remove('active');
+//   setTimeout(() => {
+//     colorsFixed.classList.remove('active');
+//   }, 300);
   
-};
+// };
 function copyToClipboard(text) {
   var tempInput = document.createElement("textarea");
   tempInput.style = "position: absolute; left: -1000px; top: -1000px";
@@ -63,6 +63,6 @@ for (let i = 0; i < colorsFixedFlexSpan.length; i++) {
     telegramSound.play();
     setTimeout(() => {
       copied.classList.remove('active');
-    }, 700);
+    }, 500);
   }
 }

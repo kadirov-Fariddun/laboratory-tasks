@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 
 import './main.css';
-import Home from './components/Home';
-import Pricing from './components/Pricing';
-import Contact from './components/Contact';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Home from './Home';
+import Pricing from './Pricing';
+import Contact from './Contact';
+import Header from './Header';
+import Footer from './Footer';
 
 
 

@@ -39,7 +39,7 @@ main {
   margin: 0 auto;
   padding: 20px;
   background-color: #3c40c6;
-  background-image: url('./bg-stars.svg');
+  /* background-image: url('./bg-stars.svg'); */
   position: relative;
   display: flex;
   align-items: center;
@@ -126,19 +126,19 @@ animation-fill-mode: forwards;
 
 /*colors*/
 .colors{
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   border-radius: 12px;
-  max-width: 800px;
+  max-width:800px;
   width: 100%;
   margin: 0 auto;
   padding: 20px;
   cursor: pointer;
   transition: .3s;
 }
-.colors:hover .colors-flex span{
+/* .colors:hover .colors-flex span{
   transition: .3s;
   transform: scale(1.5);
-}
+} */
 .colors-flex{
   width: 100%;
   display: grid;
@@ -150,11 +150,12 @@ animation-fill-mode: forwards;
   transition: .3s;
 } 
 .colors-flex span{
-  width: auto;
-  height: 100px;
+  height: 25%;
   display: block;
   background-color:#1abc9c;
   transition: .3s;
+  min-height: 100px;
+  height: 25%;
 } 
 .colors-flex span:nth-child(2){
   background-color:#2ecc71;
@@ -216,7 +217,7 @@ animation-fill-mode: forwards;
 .colors-title{
   font-size: 20px;
 }
-
+/* 
 .colors-fixed{
   position: fixed;
   top: 0;
@@ -356,21 +357,21 @@ animation-fill-mode: forwards;
 }
 .filter.active{
   left: -100%;
-}
+} */
 
 .copied{
   position: fixed;
-  top: 50%;
+  bottom: 100px;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translateX(-50%);
   background-color: #1abc9c;
   display: flex;
   align-items: center;
-  transition: .2s;
-  width: 0%;
-  height: 0%;
+  width:250px;
+  height: 150px;
   overflow: hidden;
   z-index: 1000;
+  opacity: 0;
 }
 .copied-title{
   width: 100%;
@@ -384,7 +385,5 @@ animation-fill-mode: forwards;
  
 }
 .copied.active{
-  transition: .2s;
-  width: 100%;
-  height: 100%;
+  opacity: 1;
 }
